@@ -1,0 +1,21 @@
+html
+    head
+        title='Mi plantilla de medidor en Pug JS'
+    body
+        form(method='post' action='/')
+            div 
+                label='Nombre'
+                input(id="nombre" type="text" name="nombre")
+            div 
+                label='Precio'
+                input(id="precio" type="number" name="precio")
+            div 
+                label='Foto(URL)'
+                input(id="foto" type="text" name="foto")
+
+            button='Agregar Producto'
+        form(method='get' action='/productos')
+            button='Ver productos'
+
+        
+

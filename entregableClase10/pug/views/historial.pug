@@ -1,0 +1,21 @@
+html 
+    body
+        h2='Historial'
+        if productos.length>0
+            div
+                tr
+                    th='Nombre '
+                    th='Precio '
+                    th='Foto'
+            div
+            each producto in productos
+                tr
+                    td=producto.nombre + " "
+                    td='$'+producto.precio + " "
+                    td=producto.foto
+                    br
+        else 
+            p='No hay productos'
+        form(method='get' action='/')
+            button='Agregar productos'
+                
