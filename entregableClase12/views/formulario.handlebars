@@ -1,0 +1,40 @@
+<h1>Ingrese el nuevo producto</h1>
+<br>
+<form onsubmit="return addProduct(this)">
+    <div class="form-group">
+        <label for="nombre"><b>Nombre</b></label>
+        <input id="nombre" class="form-control" type="text" name="nombre">
+    </div>
+    <div class="form-group">
+        <label for="precio"><b>Precio</b></label>
+        <input id="precio" class="form-control" type="number" name="precio">
+    </div>
+    <div class="form-group">
+        <label for="foto"><b>Foto(URL)</b></label>
+        <input id="foto" class="form-control" type="text" name="foto">
+    </div>
+
+    <input type="submit" value="Agregar Producto" class="btn btn-success mt-3 mb-5"></input>
+    
+</form>
+
+
+{{!-- Historial --}}
+<h2>Historial</h2>
+<div class="table-responsive" id="table">
+    
+</div>
+
+{{!-- Chat de la app --}}
+
+<body>
+    <h1>Mi App Chat</h1>
+    <form onsubmit="return addMessage(this)">
+        <input type="text" id="username" placeholder="Ingrese su mail">
+        <input type="text" id="text" placeholder="Cuentanos algo...">
+        <input type="submit" value="Enviar"></input>
+    </form>
+    <div id="messages"></div>
+</body>
+
+</html>
